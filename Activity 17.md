@@ -32,19 +32,20 @@ class SS:
 ```python
 from ss import *
 ```
-2. Your class should have an __init__ method with an optional dictionary parameter: {social:[last,first,start,pay_rate]}. 
+2. Your class should have an __init__ method with an optional parameters for the employee information. 
 ```python
-    def __init__(self,{social:[last,first,start,pay_rate]})
+    def __init__(self, last=None, first=None, start=None, pay_rate=None, social=None)
 ```
 Where social is SS class, first, last, and start are strings, and pay_rate is a float. 
-- check to see if first is None, if so then input the employee.
+- check to see if first is None, if so then input the employee. Make sure to use the social class to get the social
+  security number.
 - if first is not None, then
 ```python
     self.first = first
     self.last = last
     self.start = start
-    self.payrate = rate
-    self.ss = social
+    self.pay_rate = pay_rate
+    self.social = social
 ```
 
 3. Create a __str__ method that returns a string with all the employee information in a nicely formatted string.
@@ -52,10 +53,26 @@ Where social is SS class, first, last, and start are strings, and pay_rate is a 
 #### Create the module
 - put the code from this module in a file employee.py
 
-### Create an employee database
+### Create a new file employeedb.py
 
-#### Import the employee module
+- Import the employee module
+```python
 from employee import *
+```
+- Instantiate the employee class:
+```python
+emp1 = Employee()
+```
+- Instantiate the employee class with
+```python
+emp2 = Employee('Jim', 'Bob', '10/22/14', 23.50, '045-23-3333')
+```
+- Print the employees
+```python
+print(emp1)
+print('\n\n')
+print(emp2)
+```
 
-#### Create an empty employee list
-empl = 
+
+ 
