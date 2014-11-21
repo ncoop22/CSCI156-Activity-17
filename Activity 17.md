@@ -29,25 +29,25 @@ class SS:
 ### Create an employee module
 #### Create an employee class
 1. Your first line of code should be 
-```python
-from ss import *
-```
+    ```python
+       from ss import *
+    ```
 
 2. Your class should have an __init__ method with an optional parameters for the employee information. 
-```python
+   ```python
     def __init__(self, last=None, first=None, start=None, pay_rate=None, social=None)
-```
-Where social is SS class, first, last, and start are strings, and pay_rate is a float. 
-- check to see if first is None, if so then input the employee. Make sure to use the social class to get the social
-  security number.
-- if first is not None, then
-```python
-    self.first = first
-    self.last = last
-    self.start = start
-    self.pay_rate = pay_rate
-    self.social = social
-```
+   ```
+   Where social is SS class, first, last, and start are strings, and pay_rate is a float. 
+   - check to see if first is None, if so then input the employee. Make sure to use the social class to get the social
+     security number.
+   - if first is not None, then
+   ```python
+        self.first = first
+        self.last = last
+        self.start = start
+        self.pay_rate = pay_rate
+        self.social = social
+    ```
 
 3. Create a __str__ method that returns a string with all the employee information in a nicely formatted string.
 
